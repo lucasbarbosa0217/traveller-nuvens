@@ -38,7 +38,7 @@ const chamarApi = () => {
         <p class="description">Wi-Fi gratuito &#9679; Café da manhã incluso &#9679; Acessibilidade &#9679; Recepção 24h</p>
             <p></p>
                <p class="price"><b>R$ ${Math.floor(Math.random() * 600)}</b>/noite<p></p>
-            <a href="exemploHotel.jsp?${obj.id}" class="btn btn-primary blueClr">ACESSAR</a>
+            <a href="exemploHotel.html?${obj.id}" class="btn btn-primary blueClr">ACESSAR</a>
             </div>
         </div>
         </li>

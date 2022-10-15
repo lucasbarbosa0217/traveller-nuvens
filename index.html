@@ -21,6 +21,9 @@
 
   <title>Traveller - Home</title>
   <script src="https://kit.fontawesome.com/5170ecd3f8.js" crossorigin="anonymous"></script>
+  <script src="./utils/getTokenStorage"></script>
+  <script src="./script/httpClient.js"></script>
+  <script src="./script/isLogin.js"></script>
 </head>
 
 <body>
@@ -53,12 +56,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#" style="color:#000000">Blog</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color:#000000">Cadastre-se</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn pinkClr text-light fw-bold login " href="#">Login</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="./cadastro.html"
+							style="color: #000000; font-weight: 800">Cadastre-se</a></li>
+						<li class="nav-item"><button
+							class="nav-link btn pinkClr text-light fw-bold login" id="loginClick">Login</button>
+						</li>
           </ul>
         </div>
       </nav>
@@ -369,7 +371,7 @@
       <div class="">
         <a href=""><img alt="logo do facebook" src="img/facebook.png" class="img-footer img-small"></a>
         <a href=""><img alt="logo do instagram" src="img/instagram.png" class="img-footer img-small"></a>
-        <a href=""><img alt="logo do twitter" src="img/twitter.png" class="img-footer img-small"></a>
+        <a href=""><img alt="logo do twitter" src="img/twitter.png" class="img-footer img-small" onclick=""></a>
       </div>
     </div>
     <!-- Copyright -->
@@ -377,6 +379,8 @@
   </footer>
   </div>
   </div>
+
+  <script src="./script/changeLoginButton.js"></script>
 </body>
 
 </html>

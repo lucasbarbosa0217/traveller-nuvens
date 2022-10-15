@@ -1,0 +1,6 @@
+input, button{
+    display: block;
+    padding: 1rem;
+    width: 30%;
+    margin-bottom: 1rem;
+}

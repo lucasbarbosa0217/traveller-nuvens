@@ -13,6 +13,7 @@ const adgrande = document.getElementById("adgrande");
 const urlsite = document.getElementById("url");
 const phone = document.getElementById("phone");
 var url = document.URL.split('?');
+url[1] = url[1].replace(/\D/g,'');
 
 var ratePlaceholder = 5;
 const chamarApi = () => {
@@ -27,6 +28,7 @@ const chamarApi = () => {
           fetch(`https://api.tomtom.com/search/2/place.json?entityId=${url[1]}&key=pqz88PV1QgzBDAi8nGy8oaYhKga3vUMG`)
           .then((poir) => poir.json())
           .then((poir) =>{
+            console.log(poir)
               nomehotel.innerHTML = poir.results[0].poi.name;
               city2.innerHTML = poir.results[0].address.municipality;
               city3.innerHTML = poir.results[0].address.municipality;

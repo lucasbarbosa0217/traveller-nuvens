@@ -132,13 +132,17 @@ footer{
 }
 
 .placeholderimg{
-    border-radius: 10vh; height: 40vh;
+    border-radius: 10vh; width: 100%; height:30vh
 }
 
 .card-comochegar{
     width: 100%;
     margin-right: 0;
 }
+
+.ratebox{display: flex; flex-wrap: wrap; justify-content: space-between;  }
+
+.card-rating{width:33%}
 
 
 .fa-star{font-size: 0.8rem;}
@@ -302,6 +306,7 @@ footer{
     height: 100%;
 }
 
+
 .card-title{
     text-align: center;
 }
@@ -360,6 +365,7 @@ textarea{
       flex-direction: column;
       margin-top: 1rem;
     }
+    .card-rating{width:50%}
 
 
 
@@ -419,6 +425,9 @@ textarea{
 	flex-direction:row;
 	flex-wrap:nowrap;
 }
+
+.card-rating{width:100%}
+
    
    .col-2{
    flex:initial;
