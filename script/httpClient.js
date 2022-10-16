@@ -1,9 +1,7 @@
-
-
 const defaultHeaders = {
-  Accept: 'application/json',
-  'Content-Type': 'application/json',
-  'Access-Control-Allow-Origin': '*',
+  Accept: "application/json",
+  "Content-Type": "application/json",
+  "Access-Control-Allow-Origin": "*",
 };
 
 const axiosConfig = axios.create({
@@ -17,4 +15,3 @@ axiosConfig.defaults.headers.common.Authorization = getTokenStorage();
 class HttpClient {
   static api = axiosConfig;
 }
-

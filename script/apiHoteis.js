@@ -1,10 +1,10 @@
-let htmlList = '';
-let starquantity = '';
+let htmlList = "";
+let starquantity = "";
 let star = `<span id="rateMe"> ${starquantity}`;
 
-const listahotel = document.getElementById('hoteisProximos');
-const city = document.getElementById('city');
-city.innerHTML = 'São Paulo';
+const listahotel = document.getElementById("hoteisProximos");
+const city = document.getElementById("city");
+city.innerHTML = "São Paulo";
 
 let ratePlaceholder = 5;
 
@@ -26,7 +26,7 @@ const chamarApi = () => {
           }
         }
         star = `  <span id="rateMe"> ${starquantity}`;
-        starquantity = '';
+        starquantity = "";
         const nomehotel = obj.poi.name;
         htmlList += `
         <li class="list-unstyled">
@@ -37,8 +37,12 @@ const chamarApi = () => {
         <p>${obj.address.municipality}, ${obj.address.countrySubdivision}</p>
         <p class="description">Wi-Fi gratuito &#9679; Café da manhã incluso &#9679; Acessibilidade &#9679; Recepção 24h</p>
             <p></p>
-               <p class="price"><b>R$ ${Math.floor(Math.random() * 600)}</b>/noite<p></p>
-            <a href="exemploHotel.html?${obj.id}" class="btn btn-primary blueClr">ACESSAR</a>
+               <p class="price"><b>R$ ${Math.floor(
+                 Math.random() * 600
+               )}</b>/noite<p></p>
+            <a href="exemploHotel.html?${
+              obj.id
+            }" class="btn btn-primary blueClr">ACESSAR</a>
             </div>
         </div>
         </li>

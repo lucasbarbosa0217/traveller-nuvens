@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./utils/getTokenStorage"></script>
     <script src="./script/httpClient.js"></script>
     <script src="./script/isLogin.js"></script>
     <script src="./script/users.service.js"></script>
- 
 
     <link href="./styles/cadastro.css" rel="stylesheet" />
-</head>
-<body>
-        <h1>Cadastro</h1>
-        <label for="name">Nome:</label>
-        <input type="text" name="name" id="name" required>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
-        <label for="password">Senha:</label>
-        <input type="password" name="password" id="password" required>
-        <label for="photoUrl">foto:</label>
-        <input type="text" name="photoUrl" id="photoUrl">
-        <button id="enviar">Cadastrar</button>
+  </head>
+  <body>
+    <h1>Cadastro</h1>
+    <label for="name">Nome:</label>
+    <input type="text" name="name" id="name" required />
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required />
+    <label for="password">Senha:</label>
+    <input type="password" name="password" id="password" required />
+    <label for="photoUrl">foto:</label>
+    <input type="text" name="photoUrl" id="photoUrl" />
+    <button id="enviar">Cadastrar</button>
 
-    <script src="./script/dom.js"></script>
-
-</body>
+    <script src="./script/signUp.js"></script>
+  </body>
 </html>
