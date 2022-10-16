@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/scroll.css">
+    <link rel="stylesheet" href="./styles/hospedagem.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Traveller - Home</title>
+    <script src="https://kit.fontawesome.com/5170ecd3f8.js" crossorigin="anonymous"></script>
+    <script src="./utils/getTokenStorage"></script>
+    <script src="./script/httpClient.js"></script>
+    <script src="./script/usersLogin.service.js"></script>
+    <link href="./styles/cadastro.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- NAVBAR COM SEARCHBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form id="form_search" name="form_search" method="get" action="" class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Search for..." type="text">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <!-- FIM NAVBAR -->
+
+    <!-- Navegação secundária-->
+    <div class="container">
+        <nav class="second-nav">
+            <ul class="list-unstyled d-flex justify-content-between my-5">
+                <li> <a href='dicas-uteis.html' class='navOption'> <span
+                            class="underline-green flexItemNav greenClr p-2 rounded text-black">Dicas Úteis</span></a>
+                </li>
+                <li><a href='hospedagem.html' class='navOption'> <span
+                            class="underline-blue flexItemNav ">Hospedagem</span></a></li>
+                <li><a href='gastronomia.html' class='navOption'> <span
+                            class="underline-pink flexItemNav ">Gastronomia</span></a></li>
+                <li><a href='historia.html' class='navOption'> <span class="underline-orange flexItemNav">História e
+                            Cultura</span></a></li>
+                <li><a href='entretenimento.html' class='navOption'> <span
+                            class="underline-purple flexItemNav">Entretenimento</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Fim da navegação secundária -->
+
+
+
+
+    <!-- Navegação secundária mobile-->
+
+    <nav class="row SegundaNav-mobile bg-light fixed-bottom text-center text-small">
+        <div class="col navOptionMobile underline-green">
+            <a href='dicas-uteis.html' class='navOption'>
+                <img class="navMobileIcon img-fluid" src="./img/nav/dicas-uteis-icon.png" alt="Ícone de dicas úteis">
+                <p class="text-small">Dicas Úteis</p>
+            </a>
+        </div>
+        <div class="col navOptionMobile">
+            <a href='hospedagem.html' class='navOption'>
+                <img class="navMobileIcon img-fluid" src="./img/nav/hospedagem-icon.png" alt="Ícone de hospedagem">
+                <p class="text-small">Hospedagem</p>
+            </a>
+        </div>
+        <div class="col navOptionMobile">
+            <a href='gastronomia.html' class='navOption'>
+                <img class="navMobileIcon img-fluid" src="./img/nav/gastronomia-icon.png" alt="Ícone de hospedagem">
+                <p class="text-small">Gastronomia</p>
+            </a>
+        </div>
+        <div class="col navOptionMobile">
+            <a href='historia.html' class='navOption'>
+                <img class="navMobileIcon img-fluid" src="./img/nav/cultura-icon.png" alt="Ícone de hospedagem">
+                <p class="text-small">Cultura</p>
+            </a>
+        </div>
+        <div class="col navOptionMobile">
+            <a href='entretenimento.html' class='navOption'>
+                <img class="navMobileIcon img-fluid" src="./img/nav/entretenimento-icon.png" alt="Ícone de hospedagem">
+                <p class="text-small">Entretenimento</p>
+            </a>
+        </div>
+    </nav>
+    <!-- Fim da navegação secundária -->
+
+
+    <!-- Banner principal -->
+    <div class="container bigimage" title="">
+        <img src="./img/dicas-uteis/topo.png" class="rounded"
+            alt="Foto de uma janela de hotel mostrando a paísagem de São Paulo." />
+        <h1>Dicas Úteis de <b id="city">São Paulo</b></h1>
+    </div>
+    <!-- Fim do banner principal -->
+
+    <!-- Quando ir -->
+    <section id="quandoIr" class="quandoIr mt-5">
+        <div class="container">
+
+                <div class="section-title">
+                    <h3 class="font-weight-bold text-left">Quando Ir</h3>
+                    <div class="underline-green line-small mb-4"></div>
+
+                <img src="img/dicas/quando-ir.jpg" class="img-fluid body-img" alt="Foto aérea de São Paulo">
+                <p>O clima de São Paulo é considerado tropical úmido e as
+                    estações não são tão marcadas como em outras regiões do Brasil.
+                    No inverno podemos ter dias muito quentes e no verão podemos ter
+                    dias frescos.</p>
+                <br>
+                <p>A temperatura durante o ano pode variar entre 15°C e 36°C e
+                    poucas vezes ela muda bruscamente, como com passagens de frente
+                    fria que podem fazer a temperatura cair mais de 10 graus de um
+                    dia para o outro. Então dá para vir em qualquer época do ano.</p>
+                <br>
+                <p>Em São Paulo capital não tem alta ou baixa temporada, nem
+                    mudanças grandes nos preços, pois funciona como cidade de
+                    negócios e não depende somente do turismo. Quando preços sobem, é
+                    mais a questão da inflação no Brasil mesmo. Inclusive, aqui é
+                    muito interessante para fazer compras. Claro que para se hospedar
+                    ou chegar de avião, é bom se planejar com antecedência para
+                    aproveitar os melhores preços.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Fim de QUANDO IR -->
+
+
+</body>
+
+
+</html>
