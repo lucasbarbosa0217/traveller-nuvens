@@ -232,14 +232,22 @@ footer{
 
 .dicas:hover{
 	background-color: #016f45;
-    font-weight:500;
-    text-align: left;
 }
 
 .menuHosp:hover{
 	background-color:#12679c;
-    font-weight:500;
-    text-align: left;
+}
+
+.menuGast:hover{
+	background-color:#cf0567;
+}
+
+.menuHist:hover{
+	background-color:#9a3904;
+}
+
+.menuEntr:hover{
+	background-color:#7406b3;
 }
 
 .col{display: inline-block;}
