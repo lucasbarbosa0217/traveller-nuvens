@@ -1,8 +1,9 @@
-const form = document.getElementById("enviar");
+const form = document.getElementById("loginform");
 const emailUser = document.getElementById("email");
 const passwordUser = document.getElementById("password");
 
-form.addEventListener("click", (event) => {
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
   UsersLoginService.create(emailUser.value, passwordUser.value)
     .then((data) => {
       localStorage.setItem("TOKEN_KEY", data.token);

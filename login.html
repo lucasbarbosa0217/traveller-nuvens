@@ -25,6 +25,7 @@
     <script src="./utils/getTokenStorage"></script>
     <script src="./script/httpClient.js"></script>
     <script src="./script/isLogin.js"></script>
+    <script src="./script/usersLogin.service.js"></script>
 </head>
 
 <body>
@@ -89,7 +90,7 @@
   <h1 class="font-weight-bold">Login</h1>
   <div class="divisor pinkClr w-25"></div>
 
-  <form class="mt-3">
+  <form class="mt-3" id="loginform">
     <div class="form-group">
     <label for="email">Email:</label>
     <input class="form-control" type="email" name="email" id="email" required>
@@ -98,8 +99,7 @@
     <label for="password">Senha:</label>
     <input class="form-control" type="password" name="password" id="password" required>
     </div>
-    <button class="px-5 py-2 rounded pinkClr text-white font-weight-bold botaoCadastro" id="enviar">Fazer Login</button>
-    
+    <input type="submit" value="Fazer login"class="px-5 py-2 rounded pinkClr text-white font-weight-bold botaoCadastro" id="enviar">
   </form>
 </div>
 

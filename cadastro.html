@@ -25,6 +25,7 @@
   <script src="./utils/getTokenStorage"></script>
   <script src="./script/httpClient.js"></script>
   <script src="./script/isLogin.js"></script>
+  <script src="./script/users.service.js"></script>
 </head>
 
 <body>
@@ -81,7 +82,7 @@
   <h1 class="font-weight-bold">Cadastro</h1>
   <div class="divisor pinkClr w-25"></div>
 
-  <form class="mt-3">
+  <form class="mt-3" id="cadastro">
     <div class="form-group">
     <label for="name">Nome:</label>
     <input class="form-control" type="text" name="name" id="name" required />
@@ -98,7 +99,7 @@
     <label for="photoUrl">Foto:</label>
     <input class="form-control" type="text" name="photoUrl" id="photoUrl" />
     </div>
-    <button class="px-5 py-2 rounded pinkClr text-white font-weight-bold botaoCadastro" id="enviar">Cadastrar</button>
+    <input type="submit" class="px-5 py-2 rounded pinkClr text-white font-weight-bold botaoCadastro" id="enviar" value="Cadastrar">
     
   </form>
 </div>
@@ -207,6 +208,7 @@
   </footer>
 
   <script src="./script/signUp.js"></script>
+  <scip
 </body>
 
 </html>
