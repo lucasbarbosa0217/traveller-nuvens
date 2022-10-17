@@ -18,4 +18,4 @@ Por isso fizemos uma seção chamada "temperatura média dos próximos dias", qu
 
 ### TomTom 
 Escolhemos a API Tomtom, pois gratuitamente ela retorna os locais próximos de suas coordenadas e outras informações relevantes.
-No app ela cria uma lista de locais dinamicamente. A API [Traveller](https://github.com/fabriciosw/Traveller) utiliza as IDs gerads por essa API para gerenciar as avaliações feitas pelos usuários
+No app ela cria uma lista de locais dinamicamente. A API [Traveller](https://github.com/fabriciosw/Traveller) utiliza as IDs geradas por essa API para gerenciar as avaliações feitas pelos usuários
