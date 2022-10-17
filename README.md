@@ -16,8 +16,6 @@ Escolhemos a API Open Weather Map, pois para um turista é de extrema relevânci
 
 Por isso fizemos uma seção chamada "temperatura média dos próximos dias", que renderiza dinamicamente as  temperaturas médias dos próximos 8 dias. Com cores ajustadas automaticamente para ajudar da experiência do usuário
 
-A implementação da API está localizada no arquivo [apiTemperatura.js](https://github.com/lucasbarbosa0217/Traveller-Heroku/blob/main/script/apiTemperatura.js). 
-
 ### TomTom 
 Escolhemos a API Tomtom, pois gratuitamente ela retorna os locais próximos de suas coordenadas e outras informações relevantes.
 No app ela cria uma lista de locais dinamicamente. A API [Traveller](https://github.com/fabriciosw/Traveller) utiliza as IDs gerads por essa API para gerenciar as avaliações feitas pelos usuários
