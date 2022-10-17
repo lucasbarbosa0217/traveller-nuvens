@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/hospedagem.css">
+    <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/scroll.css">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
@@ -33,83 +34,113 @@
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
   </script>
 
-  <div class="BrunaPortela">
-    <header class="container">
-      <nav class="navbar navbar-expand-lg navbar-light nav-custom d-flex justify-content-between">
-        <div class="logo">
-          <a class="navbar-brand" href="index.html">
-            <img class="navbar-logo" src="./img/logo.png"
-              alt="Logo do Projeto Traveller - os ponteiros de uma bússola preenchidos pela ilustração da superfície da terra">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-    
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" style="color:#000000">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color:#000000">Minhas viagens</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color:#000000">Blog</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="./cadastro.html"
+ <!-- Início da header -->
+	<header class="container">
+		<nav class="navbar navbar-expand-lg navbar-light nav-custom d-flex justify-content-between">
+			<div class="logo">
+				<a class="navbar-brand" href="index.html"> <img class="navbar-logo " src="./img/logo.png"
+						alt="Logo do Projeto Traveller - os ponteiros de uma bússola preenchidos pela ilustração da superfÃ­cie da terra">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+
+
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+
+
+				<ul class="navbar-nav w-100 d-flex justify-content-end">
+					<li class="nav-item active"><a class="nav-link" href="#"
+							style="color: #000000; font-weight: 800">Home <span class="sr-only">(current)</span></a>
+					</li>
+
+					<li class="nav-item"><a class="nav-link" href="./cadastro.html"
 							style="color: #000000; font-weight: 800">Cadastre-se</a></li>
-						<li class="nav-item"><button
-							class="nav-link btn pinkClr text-light fw-bold login" id="loginClick">Login</button>
-						</li>
-          </ul>
-        </div>
-      </nav>
+					<li class="nav-item"><button class="nav-link btn pinkClr text-light fw-bold login"
+							id="loginClick">Login</button>
+					</li>
+				</ul>
 
-</div>
+				<!-- SEARCHBAR -->
+				<form id="form_search" name="form_search" class="form-inline w-100">
+					<div class="form-group w-100">
+						<div class="input-group w-100">
+							<input class="form-control" placeholder="Pesquise um destino..." type="text">
+							<span class="input-group-btn">
+								<button class="btn btn-default pinkClr text-light fw-bold" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+							</span>
+						</div>
+					</div>
+				</form>
+				<!-- FIM DA SEARCHBAR -->
 
-<div class="container ">
-  <div class="row second-nav my-5 rowSegundaNav">
-    <!-- Div vazia para espaçamento -->
-    <div class="col-1"></div>
-    <!-- Fim da div vazia para espaçamento -->
-    
-    	<div class="col-2"><a href='dicas-uteis.html' class='navOption'>
-      		<span class="underline-green flexItemNav">Dicas Úteis</span> </a>
-    	</div>
-   
-    <div class="col-2">
-    <a href='hospedagem.html' class='navOption mb-3'>
-      <span class="underline-blue flexItemNav  mb-3">Hospedagem</span></a>
-    </div>
-    <div class="col-2">
-    <a href='gastronomia.html' class='navOption mb-3'>
-      <span class="underline-pink flexItemNav pinkClr p-2 rounded text-white mb-3">Gastronomia</span></a>
-    </div>
-    <div class="col-2">
-    <a href='historia.html' class='navOption mb-3'>
-      <span class="underline-orange flexItemNav  mb-3">História e Cultura</span></a>
-    </div>
-    <div class="col-2">
-    <a href='entretenimento.html' class='navOption mb-3'>
-      <span class="underline-purple flexItemNav mb-3">Entretenimento</span></a>
-    </div>
-    <!-- Div vazia para espaçamento -->
-    <div class="col-1"></div>
-    <!-- Fim da div vazia para espaçamento -->
-  </div>
-</div>
-</header>
-<div class="container">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Brasil</a></li>
-        <li class="breadcrumb-item"><a href="#">Sao Paulo</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Gastronomia</li>
-      </ol>
-    </nav>
-  </div>
+			</div>
+		</nav>
+	</header>
+	<!-- Fim da header -->
+
+	<!-- Navegação secundária -->
+
+	<div class="container">
+		<nav class="second-nav">
+			<ul class="list-unstyled d-flex justify-content-between my-5">
+				<li> <a href='dicas-uteis.html' class='navOption'> <span
+							class="underline-green flexItemNav">Dicas Úteis</span></a>
+				</li>
+				<li><a href='hospedagem.html' class='navOption'> <span
+							class="underline-blue flexItemNav">Hospedagem</span></a></li>
+				<li><a href='gastronomia.html' class='navOption'> <span
+							class="underline-pink flexItemNav  pinkClr p-2 rounded text-white">Gastronomia</span></a></li>
+				<li><a href='historia.html' class='navOption'> <span class="underline-orange flexItemNav">História e
+							Cultura</span></a></li>
+				<li><a href='entretenimento.html' class='navOption'> <span
+							class="underline-purple flexItemNav">Entretenimento</span></a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- Fim da navegação secundária -->
+
+
+	<!-- Navegação secundária mobile-->
+
+	<nav class="row SegundaNav-mobile bg-light fixed-bottom text-center text-small">
+		<div class="col navOptionMobile">
+			<a href='dicas-uteis.html' class='navOption'>
+				<img class="navMobileIcon img-fluid" src="./img/nav/dicas-uteis-icon.png" alt="Ícone de dicas úteis">
+				<p class="text-small">Dicas Úteis</p>
+			</a>
+		</div>
+		<div class="col navOptionMobile">
+			<a href='hospedagem.html' class='navOption '>
+				<img class="navMobileIcon img-fluid" src="./img/nav/hospedagem-icon.png" alt="Ícone de hospedagem">
+				<p class="text-small">Hospedagem</p>
+			</a>
+		</div>
+		<div class="col navOptionMobile underline-pink">
+			<a href='gastronomia.html' class='navOption'>
+				<img class="navMobileIcon img-fluid" src="./img/nav/gastronomia-icon.png" alt="Ícone de hospedagem">
+				<p class="text-small">Gastronomia</p>
+			</a>
+		</div>
+		<div class="col navOptionMobile">
+			<a href='historia.html' class='navOption'>
+				<img class="navMobileIcon img-fluid" src="./img/nav/cultura-icon.png" alt="Ícone de hospedagem">
+				<p class="text-small">Cultura</p>
+			</a>
+		</div>
+		<div class="col navOptionMobile">
+			<a href='entretenimento.html' class='navOption'>
+				<img class="navMobileIcon img-fluid" src="./img/nav/entretenimento-icon.png" alt="Ícone de hospedagem">
+				<p class="text-small">Entretenimento</p>
+			</a>
+		</div>
+	</nav>
+
+	<!-- Fim da navegação secundária -->
 
 
 <div class="container bigimage" title="">
@@ -121,18 +152,18 @@
 
 
   <div class="container p-4 locaisproximos mt-5">
-    <div class="locais-title mt-2 ">
-      <h2>Restaurantes em Destaque</h4>
+    <div class="locais-title mt-2">
+      <h3 class="font-weight-bold">Restaurantes em Destaque</h3>
         <div class="divisor pinkClr">
         </div>
     </div>
   </div>
-  <div class="d-flex flex-row flex-nowrap overflow-auto line-items" id="hoteisProximos">
-<ul title="Lista de Restaurantes próximos " class="d-flex flex-row">
+  <div class="container d-flex flex-row flex-nowrap overflow-auto line-items" id="hoteisProximos">
+<ul title="Lista de Restaurantes próximos " class="d-flex flex-row list-style-none">
 
   <li>
    <div class="card hotel">
-  <img src="img/restaurante.jpg"  alt="Foto do interior de um restaurante"/>
+  <img class="card-img-top rounded" src="img/restaurante.jpg"  alt="Foto do interior de um restaurante"/>
         <div class="textcard">
         <h3>Restaurante <span id="rateMe"> </h3>
           <i class="fas fa-star py-2 px-1 yellowClr" data-index="0" data-html="true" data-toggle="popover"
@@ -149,16 +180,14 @@
         </span>
      
         <p>Barra Funda, São Paulo</p>
-        <p class="description">Comida Chinesa</p>
-        <p class="text-center mb-0">Média de preço:</p>
-        <p class="price"><b>R$ 40</b>/pessoa<p>
+
         <a href="exemploRestaurante.html" class="btn btn-primary pinkClr">ACESSAR PÁGINA</a>
         </div>
 
       </li>
       <li>
         <div class="card hotel">
-       <img src="img/restaurante.jpg"  alt="Foto do interior de um restaurante"/>
+       <img class="card-img-top rounded" src="img/restaurante.jpg"  alt="Foto do interior de um restaurante"/>
              <div class="textcard">
              <h3>Restaurante <span id="rateMe"> </h3>
                <i class="fas fa-star py-2 px-1 yellowClr" data-index="0" data-html="true" data-toggle="popover"
@@ -175,16 +204,14 @@
              </span>
           
              <p>Barra Funda, São Paulo</p>
-             <p class="description">Comida Chinesa</p>
-             <p class="text-center mb-0">Média de preço:</p>
-             <p class="price"><b>R$ 40</b>/pessoa<p>
+
              <a href="exemploRestaurante.html" class="btn btn-primary pinkClr">ACESSAR PÁGINA</a>
              </div>
      
            </li>
            <li>
             <div class="card hotel">
-           <img src="img/restaurante.jpg"  alt="Foto do interior de um restaurante"/>
+           <img class="card-img-top rounded" src="img/restaurante.jpg"  alt="Foto do interior de um restaurante"/>
                  <div class="textcard">
                  <h3>Restaurante <span id="rateMe"> </h3>
                    <i class="fas fa-star py-2 px-1 yellowClr" data-index="0" data-html="true" data-toggle="popover"
@@ -201,16 +228,13 @@
                  </span>
               
                  <p>Barra Funda, São Paulo</p>
-                 <p class="description">Comida Chinesa</p>
-                 <p class="text-center mb-0">Média de preço:</p>
-                 <p class="price"><b>R$ 40</b>/pessoa<p>
                  <a href="exemploRestaurante.html" class="btn btn-primary pinkClr">ACESSAR PÁGINA</a>
                  </div>
          
                </li>
                <li>
                 <div class="card hotel">
-               <img src="img/restaurante.jpg"  alt="Foto do interior de um restaurante"/>
+               <img class="card-img-top rounded" src="img/restaurante.jpg"  alt="Foto do interior de um restaurante"/>
                      <div class="textcard">
                      <h3>Restaurante <span id="rateMe"> </h3>
                        <i class="fas fa-star py-2 px-1 yellowClr" data-index="0" data-html="true" data-toggle="popover"
@@ -227,16 +251,14 @@
                      </span>
                   
                      <p>Barra Funda, São Paulo</p>
-                     <p class="description">Comida Chinesa</p>
-                     <p class="text-center mb-0">Média de preço:</p>
-                     <p class="price"><b>R$ 40</b>/pessoa<p>
+
                      <a href="exemploRestaurante.html" class="btn btn-primary pinkClr">ACESSAR PÁGINA</a>
                      </div>
              
                    </li>
                    <li>
                     <div class="card hotel">
-                   <img src="img/restaurante.jpg"  alt="Foto do interior de um restaurante"/>
+                   <img  class="card-img-top rounded"src="img/restaurante.jpg"  alt="Foto do interior de um restaurante"/>
                          <div class="textcard">
                          <h3>Restaurante <span id="rateMe"> </h3>
                            <i class="fas fa-star py-2 px-1 yellowClr" data-index="0" data-html="true" data-toggle="popover"
@@ -253,9 +275,7 @@
                          </span>
                       
                          <p>Barra Funda, São Paulo</p>
-                         <p class="description">Comida Chinesa</p>
-                         <p class="text-center mb-0">Média de preço:</p>
-                         <p class="price"><b>R$ 40</b>/pessoa<p>
+
                          <a href="exemploRestaurante.html" class="btn btn-primary pinkClr">ACESSAR PÁGINA</a>
                          </div>
                  

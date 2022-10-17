@@ -9,8 +9,9 @@
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/hospedagem.css">
 
-  <link rel="stylesheet" href="./View/styles/style.css">
-  <link rel="stylesheet" href="./View/styles/scroll.css">
+  <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/hospedagem.css">
+  <link rel="stylesheet" href="./styles/scroll.css">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
   
@@ -34,50 +35,54 @@
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
   </script>
 
-  <div class="BrunaPortela">
-    <header class="container">
-      <nav class="navbar navbar-expand-lg navbar-light nav-custom d-flex justify-content-between">
-        <div class="logo">
-          
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-    
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" style="color:#000000">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color:#000000">Minhas viagens</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color:#000000">Blog</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="./cadastro.html"
-							style="color: #000000; font-weight: 800">Cadastre-se</a></li>
-						<li class="nav-item"><button
-							class="nav-link btn pinkClr text-light fw-bold login" id="loginClick">Login</button>
-						</li>
-          </ul>
-        </div>
-      </nav>
+  <!-- Início da header -->
+	<header class="container">
+		<nav class="navbar navbar-expand-lg navbar-light nav-custom d-flex justify-content-between">
 
-    </header>
+			<div class="collapse navbar-collapse" id="navbarNav">
+
+
+				<ul class="navbar-nav w-100 d-flex justify-content-end">
+					<li class="nav-item active"><a class="nav-link" href="#"
+							style="color: #000000; font-weight: 800">Home <span class="sr-only">(current)</span></a>
+					</li>
+
+					<li class="nav-item"><a class="nav-link" href="./cadastro.html"
+							style="color: #000000; font-weight: 800">Cadastre-se</a></li>
+					<li class="nav-item"><button class="nav-link btn pinkClr text-light fw-bold login"
+							id="loginClick">Login</button>
+					</li>
+				</ul>
+
+
+			</div>
+		</nav>
+	</header>
+	<!-- Fim da header -->
+
     <div class="d-flex justify-content-center mt-5">
       <img class="img-fluid" src="./img/logo.png" alt="">
     </div>
+
     <div class="d-flex justify-content-center mt-5">
-      <form class="form-inline">
-        <input class="form-control px-md-5 px-lg-5 px-xl-5 px-2" type="search" placeholder="Pesquise um destino"
-          aria-label="Search">
-        <button class="btn pinkClr text-light my-2 my-sm-0 font-weight-bold" type="submit">Search</button>
-      </form>
+     
+      	<!-- SEARCHBAR -->
+				<form id="form_search" name="form_search" class="form-inline w-25">
+					<div class="form-group w-100">
+						<div class="input-group w-100">
+							<input class="form-control" placeholder="Pesquise um destino..." type="text">
+							<span class="input-group-btn">
+								<button class="btn btn-default pinkClr text-light fw-bold" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+							</span>
+						</div>
+					</div>
+				</form>
+				<!-- FIM DA SEARCHBAR -->
+    
     </div>
+    
     <div class="d-flex justify-content-center mt-4 mb-5">
-      <button class="bg-light font-weight-bold border-rounded-pink">Destino aleatório <i
+      <button class="bg-white font-weight-bold border-rounded-pink">Destino aleatório <i
           class="fa-solid fa-dice"></i></button>
     </div>
 
@@ -89,7 +94,7 @@
     <div class="underline-pink line-small mb-4"></div>
 
   </div>
-  <div class="d-flex flex-row flex-nowrap overflow-auto line-items">
+  <div class="container d-flex flex-row flex-nowrap overflow-auto line-items">
     <!-- Card 1 -->
     <div class="card shadow-sm p-3 mb-5 bg-white rounded card text-center card-ticket">
       <img class="card-img-top rounded" src="img/index/saoPaulo.jpg" alt="Imagem de capa do card">
@@ -152,7 +157,7 @@
     <div class="underline-green line-small mb-4"></div>
 
   </div>
-  <div class="d-flex flex-row flex-nowrap overflow-auto line-items">
+  <div class="container d-flex flex-row flex-nowrap overflow-auto line-items">
     <!-- Card 1 -->
     <div class="card shadow-sm p-3 mb-5 bg-white rounded card text-center card-ticket">
       <img class="card-img-top rounded" src="img/index/amsterdam.png" alt="Imagem de capa do card">
@@ -214,7 +219,7 @@
     <div class="underline-purple line-small mb-4"></div>
 
   </div>
-  <div class="d-flex flex-row flex-nowrap overflow-auto line-items">
+  <div class="container d-flex flex-row flex-nowrap overflow-auto line-items">
     <!-- Card 1 -->
     <div class="card shadow-sm p-3 mb-5 bg-white rounded card text-center card-ticket">
       <img class="card-img-top rounded" src="img/index/patagônia.png" alt="Imagem de capa do card">

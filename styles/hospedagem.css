@@ -106,23 +106,23 @@ footer {
 }
 
 .underline-pink {
-  border-bottom: 3px solid #ff007a;
+  border-bottom: 3px solid #ff007a !important;
 }
 
 .underline-blue {
-  border-bottom: 3px solid #20a1f1;
+  border-bottom: 3px solid #20a1f1 !important;
 }
 
 .underline-purple {
-  border-bottom: 3px solid #a100ff;
+  border-bottom: 3px solid #a100ff !important;
 }
 
 .underline-orange {
-  border-bottom: 3px solid #9a3904;
+  border-bottom: 3px solid #ff9d00 !important;
 }
 
 .underline-green {
-  border-bottom: 3px solid #00ff9d;
+  border-bottom: 3px solid #00ff9d !important;
 }
 
 .breadcrumb {
@@ -146,7 +146,7 @@ footer {
 }
 
 .line-items {
-  padding: 0.5rem 5rem 2rem 5rem;
+  padding: 0.5rem 5rem 2rem 0rem;
   justify-content: space-between;
 }
 
@@ -291,6 +291,10 @@ footer {
   background-color: #9a3904;
 }
 
+.lightOrangeClr {
+  background-color: #ff9100;
+}
+
 .btn {
   border: none;
   width: 100%;
@@ -393,6 +397,7 @@ textarea {
     position: relative;
     border-radius: 10vh;
     margin: 0 auto;
+    font-size: 1.5em;
   }
 
   .bigimage img {
