@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/hospedagem.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/scroll.css">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./utils/getTokenStorage"></script>
@@ -36,74 +37,114 @@
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
   </script>
 
-  <div class="BrunaPortela">
-    <header class="container">
-      <nav class="navbar navbar-expand-lg navbar-light nav-custom d-flex justify-content-between">
-        <div class="logo">
-          <a class="navbar-brand" href="index.html">
-            <img class="navbar-logo" src="./img/logo.png"
-              alt="Logo do Projeto Traveller - os ponteiros de uma bússola preenchidos pela ilustração da superfície da terra">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
+<!-- Início da header -->
+	<header class="container">
+		<nav class="navbar navbar-expand-lg navbar-light nav-custom d-flex justify-content-between">
+			<div class="logo">
+				<a class="navbar-brand" href="index.html"> <img class="navbar-logo " src="./img/logo.png"
+						alt="Logo do Projeto Traveller - os ponteiros de uma bússola preenchidos pela ilustração da superfÃ­cie da terra">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
 
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" style="color:#000000">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color:#000000">Minhas viagens</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color:#000000">Blog</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="./cadastro.html"
-                style="color: #000000; font-weight: 800">Cadastre-se</a></li>
-            <li class="nav-item"><button class="nav-link btn pinkClr text-light fw-bold login"
-                id="loginClick">Login</button>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
-  </div>
 
-  <div class="container ">
-    <div class="row second-nav my-5 rowSegundaNav">
-      <!-- Div vazia para espaçamento -->
-      <div class="col-1"></div>
-      <!-- Fim da div vazia para espaçamento -->
+			<div class="collapse navbar-collapse" id="navbarNav">
 
-      <div class="col-2"><a href='dicas-uteis.html' class='navOption'>
-          <span class="underline-green flexItemNav">Dicas Úteis</span> </a>
-      </div>
 
-      <div class="col-2">
-        <a href='hospedagem.html' class='navOption'>
-          <span class="underline-blue flexItemNav blueClr p-2 rounded text-white">Hospedagem</span></a>
-      </div>
-      <div class="col-2">
-        <a href='gastronomia.html' class='navOption'>
-          <span class="underline-pink flexItemNav">Gastronomia</span></a>
-      </div>
-      <div class="col-2">
-        <a href='historia.html' class='navOption'>
-          <span class="underline-orange flexItemNav">História e Cultura</span></a>
-      </div>
-      <div class="col-2">
-        <a href='entretenimento.html' class='navOption'>
-          <span class="underline-purple flexItemNav">Entretenimento</span></a>
-      </div>
-      <!-- Div vazia para espaçamento -->
-      <div class="col-1"></div>
-      <!-- Fim da div vazia para espaçamento -->
-    </div>
-  </div>
-  </header>
+				<ul class="navbar-nav w-100 justify-content-end">
+					<li class="nav-item active"><a class="nav-link" href="#"
+							style="color: #000000; font-weight: 800">Home <span class="sr-only">(current)</span></a>
+					</li>
+
+					<li class="nav-item"><a class="nav-link" href="./cadastro.html"
+							style="color: #000000; font-weight: 800">Cadastre-se</a></li>
+					<li class="nav-item"><a href="./login.html"><button class="nav-link btn px-4 pinkClr text-light fw-bold login"
+					id="loginClick">Login</a></button>
+					</li>
+				</ul>
+
+				<!-- SEARCHBAR -->
+				<form id="form_search" name="form_search" class="form-inline w-100">
+					<div class="form-group w-100">
+						<div class="input-group w-100">
+							<input class="form-control" placeholder="Pesquise um destino..." type="text">
+							<span class="input-group-btn">
+								<button class="btn btn-default pinkClr text-light fw-bold" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+							</span>
+						</div>
+					</div>
+				</form>
+				<!-- FIM DA SEARCHBAR -->
+
+			</div>
+		</nav>
+	</header>
+	<!-- Fim da header -->
+
+	<!-- Navegação secundária -->
+
+	<div class="container">
+		<nav class="second-nav">
+			<ul class="list-unstyled d-flex justify-content-between my-5">
+				<li> <a href='dicas-uteis.html' class='navOption'> <span
+							class="underline-green flexItemNav">Dicas Úteis</span></a>
+				</li>
+				<li><a href='hospedagem.html' class='navOption'> <span
+							class="underline-blue flexItemNav blueClr p-2 rounded text-white ">Hospedagem</span></a></li>
+				<li><a href='gastronomia.html' class='navOption'> <span
+							class="underline-pink flexItemNav ">Gastronomia</span></a></li>
+				<li><a href='historia.html' class='navOption'> <span class="underline-orange flexItemNav">História e
+							Cultura</span></a></li>
+				<li><a href='entretenimento.html' class='navOption'> <span
+							class="underline-purple flexItemNav">Entretenimento</span></a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- Fim da navegação secundária -->
+
+
+	<!-- Navegação secundária mobile-->
+
+	<nav class="row SegundaNav-mobile bg-light fixed-bottom text-center text-small">
+		<div class="col navOptionMobile">
+			<a href='dicas-uteis.html' class='navOption'>
+				<img class="navMobileIcon img-fluid" src="./img/nav/dicas-uteis-icon.png" alt="Ícone de dicas úteis">
+				<p class="text-small">Dicas Úteis</p>
+			</a>
+		</div>
+		<div class="col navOptionMobile underline-blue">
+			<a href='hospedagem.html' class='navOption'>
+				<img class="navMobileIcon img-fluid" src="./img/nav/hospedagem-icon.png" alt="Ícone de hospedagem">
+				<p class="text-small">Hospedagem</p>
+			</a>
+		</div>
+		<div class="col navOptionMobile">
+			<a href='gastronomia.html' class='navOption'>
+				<img class="navMobileIcon img-fluid" src="./img/nav/gastronomia-icon.png" alt="Ícone de hospedagem">
+				<p class="text-small">Gastronomia</p>
+			</a>
+		</div>
+		<div class="col navOptionMobile">
+			<a href='historia.html' class='navOption'>
+				<img class="navMobileIcon img-fluid" src="./img/nav/cultura-icon.png" alt="Ícone de hospedagem">
+				<p class="text-small">Cultura</p>
+			</a>
+		</div>
+		<div class="col navOptionMobile">
+			<a href='entretenimento.html' class='navOption'>
+				<img class="navMobileIcon img-fluid" src="./img/nav/entretenimento-icon.png" alt="Ícone de hospedagem">
+				<p class="text-small">Entretenimento</p>
+			</a>
+		</div>
+	</nav>
+
+	<!-- Fim da navegação secundária -->
+
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -116,7 +157,8 @@
 
 
   <div class="container bigimage" title="">
-    <img src="img/placeholder.jpg" class="placeholderimg" alt="Foto de um quarto de hotel " />
+    <img src="img/hospedagem/hotel.jpg" class="rounded" alt="Foto de um quarto de hotel " />
+    <h1>Hotel Blue Tree</h1>
   </div>
 
   <div id="pula"></div>
@@ -127,7 +169,7 @@
         <!-- Sobre -->
         <div class="container">
           <div class="container mt-4">
-            <h1 class="font-weight-bold" id="nomelugar">Hotel</h1>
+            <h3 class="font-weight-bold" id="nomelugar">Informações gerais</h3>
             <div class="underline-blue line-small"></div>
             <div class="container d-inline-flex p-3">
               <span style="color:goldenrod;"><i class="fas fa-star"></i></span>
@@ -136,36 +178,12 @@
             </div>
           </div>
           <div class="row">
-            <div class="container col-lg-6 col-sm-12">
+            <div class="container col-lg-12 col-sm-12">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quam nulla, imperdiet ac congue non,
                 tristique a lorem. Duis varius ligula id mauris lacinia, eu fermentum eros mattis. Etiam non fringilla
                 tellus. Suspendisse potenti. Sed viverra cursus porta. Cras vel nulla consequat, venenatis nisi non,
                 cursus nibh.
               </p>
-            </div>
-
-            <div class="container col-lg-6 col-sm-12">
-              <p class="font-weight-bold">O que levar</p>
-              <ul class="list-unstyled">
-                <li> <img class="icon float-left mr-2" src="img/teatro/img (32).png" alt="ícone de check">
-
-                  Documento de identificação</li>
-
-                <li> <img class="icon float-left mr-2" src="img/teatro/img (32).png" alt="ícone de check">
-
-                  Documento de vacinação (duas doses)</li>
-              </ul>
-
-
-              <ul class="list-unstyled">
-                <li>
-                  <img class="icon float-left mr-2" src="img/teatro/img (38).png" alt="ícone de check">
-                  Compartilhar
-                </li>
-                <li> <img class="icon float-left mr-2" src="img/teatro/img (15).png" alt="ícone de check">
-
-                  Salvar</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -178,20 +196,20 @@
         <div class="card rounded p-3 shadow-sm">
           <div class="d-flex">
             <img class="icon-md mr-3" src="img/teatro/img (17).png" alt="ícone de localização laranja">
-            <p class="text-small m-0" id="adgrande">Praça Ramos de Azevedo, s/n - República, São Paulo - SP, 01037-010
+            <p class="m-0" id="adgrande">Praça Ramos de Azevedo, s/n - República, São Paulo - SP, 01037-010
             </p>
           </div>
           <div class="d-flex my-2">
             <img class="icon-md mr-3" src="img/teatro/img (20).png" alt="ícone de localização laranja">
-            <p class="text-small my-auto" id="phone">Sem telefone</p>
+            <p class="my-auto" id="phone">Sem telefone</p>
           </div>
           <div class="d-flex my-2">
             <img class="icon-md mr-3" src="img/teatro/img (27).png" alt="ícone de localização laranja">
-            <p class=" text-small my-auto" id="url">Sem site</p>
+            <p class="my-auto" id="url">Sem site</p>
           </div>
           <div class="d-flex my-2">
             <img class="icon-md mr-3" src="img/teatro/img (28).png" alt="ícone de localização laranja">
-            <p class="text-small m-0">Horário de funcionamento: <br> 7h às 19h</p>
+            <p class="m-0">Horário de funcionamento: <br> 7h às 19h</p>
           </div>
 
           <a href="#" class="btn text-light font-weight-bold blueClr">RESERVAR</a>
@@ -203,14 +221,12 @@
 
   </div>
 
-  <p class="text-md-right mt-3 mr-3" style="font-size:0.7rem">As avaliações, fotos e preços são ilustrativos</p>
-
   <!-- INICIO API TEMPO-->
   <div class="container mt-5">
     <h3 class="font-weight-bold">Temperatura Média dos Próximos Dias</h3>
     <div class="underline-purple line-small mb-4"></div>
   </div>
-  <section id="listaTemp">
+  <section class="container" id="listaTemp">
 
   </section>
   <!--FIM API TEMPO-->

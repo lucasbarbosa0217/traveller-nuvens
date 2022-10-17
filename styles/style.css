@@ -223,7 +223,7 @@ footer{
    
 }
 
-.dicas{
+.menu{
 	background-color:white;
     color:black;
     font-weight:500;
@@ -232,6 +232,12 @@ footer{
 
 .dicas:hover{
 	background-color: #016f45;
+    font-weight:500;
+    text-align: left;
+}
+
+.menuHosp:hover{
+	background-color:#12679c;
     font-weight:500;
     text-align: left;
 }

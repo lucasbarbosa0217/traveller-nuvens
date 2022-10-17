@@ -137,6 +137,10 @@ footer {
   font-weight: 700;
 }
 
+.login > a {
+  color:#ffffff;
+}
+
 .gallery {
   max-width: 100vw;
 }
