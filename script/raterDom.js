@@ -5,7 +5,7 @@ rateForm.addEventListener("submit", (event) => {
   event.preventDefault();
   var grade = 10;
   var grade = document.querySelector('input[name="grade"]:checked').value;
-
+  if(isLogged){
   RatingService.create(textarea.value, grade, url[1])
     .then((response) => response.data)
     .then((response) => {
@@ -17,4 +17,7 @@ rateForm.addEventListener("submit", (event) => {
         window.location.href = "./login.html";
       }
     });
+  } else{
+    window.location.href = "./login.html";
+  }
 });
