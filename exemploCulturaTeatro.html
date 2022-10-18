@@ -151,7 +151,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Brasil</a></li>
-        <li class="breadcrumb-item"><a href="#">Sao Paulo</a></li>
+        <li class="breadcrumb-item"><a href="#" id="city2">Sao Paulo</a></li>
         <li class="breadcrumb-item active" aria-current="page" style="color:black">História e Cultura</li>
       </ol>
     </nav>
@@ -183,12 +183,12 @@
         <!-- Sobre -->
         <div class="container">
           <div class="container mt-4">
-            <h3 class="font-weight-bold">Theatro Municipal de São Paulo</h3>
+            <h3 class="font-weight-bold" id="nomelugar">Theatro Municipal de São Paulo</h3>
             <div class="underline-orange line-small"></div>
             <div class="container d-inline-flex p-3">
               <span style="color:goldenrod;"><i class="fas fa-star"></i></span>
               <p>4,8(10)</p>
-              <p class="font-weight-bold">São Paulo, Brasil</p>
+              <p class="font-weight-bold" id="adpequeno"><b id="city3">São Paulo</b>, Brasil</p>
             </div>
           </div>
           <div class="row">
@@ -233,15 +233,15 @@
         <div class="card rounded p-3 shadow-sm">
           <div class="d-flex">
             <img class="icon-md mr-3" src="img/teatro/img (17).png" alt="ícone de localização laranja">
-            <p class="m-0">Praça Ramos de Azevedo, s/n - República, São Paulo - SP, 01037-010</p>
+            <p class="m-0" id="adgrande">Praça Ramos de Azevedo, s/n - República, São Paulo - SP, 01037-010</p>
           </div>
           <div class="d-flex my-2">
             <img class="icon-md mr-3" src="img/teatro/img (20).png" alt="ícone de localização laranja">
-            <p class=" my-auto">(11) 3053-2100</p>
+            <p class=" my-auto" id="phone">Sem Telefone</p>
           </div>
           <div class="d-flex my-2">
             <img class="icon-md mr-3" src="img/teatro/img (27).png" alt="ícone de localização laranja">
-            <p class="my-auto">theatromunicipal.org.br</p>
+            <p class="my-auto" id="url">Sem Site</p>
           </div>
           <div class="d-flex my-2">
             <img class="icon-md mr-3" src="img/teatro/img (28).png" alt="ícone de localização laranja">
@@ -952,6 +952,17 @@
 </footer>
 </div>
 </div>
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 </body>
 <script
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCrqbDyptFciQnUFDIOEroh1qrl0i7PUw&callback=initMap&v=weekly"
@@ -961,6 +972,7 @@ defer
 <script src="script/apiTemperatura.js"></script>
 <script src="./script/changeLoginButton.js"></script>
 
+<script src="script/apiHotel.js"></script>
 
 
 </html>

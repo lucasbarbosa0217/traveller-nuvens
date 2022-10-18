@@ -2,7 +2,6 @@ var htmlList = "";
 var starquantity = "";
 var star = `<span id="rateMe"> ${starquantity}`;
 
-const city = document.getElementById("city");
 const city2 = document.getElementById("city2");
 const city3 = document.getElementById("city3");
 
@@ -13,6 +12,10 @@ const urlsite = document.getElementById("url");
 const phone = document.getElementById("phone");
 var url = document.URL.split("?");
 url[1] = url[1].replace(/\D/g, "");
+
+if(url[1] == "" || url[1] == undefined){
+  window.alert("Erro ao buscar dados. A função de avaliação não funcionará")
+}
 
 var ratePlaceholder = 5;
 const chamarApi = () => {

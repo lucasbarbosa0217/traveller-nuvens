@@ -150,7 +150,7 @@
 <div class="container">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">São Paulo, Brasil</a></li>
+      <li class="breadcrumb-item"><a href="#"><b id="city2">São Paulo</b>, Brasil</a></li>
       <li class="breadcrumb-item"><a href="#">Gastronomia</a></li>
       <li class="breadcrumb-item active" aria-current="page">Maní, Jardins - SP</li>
     </ol>
@@ -175,12 +175,12 @@
         <!-- Sobre -->
         <div class="container">
           <div class="container mt-4">
-            <h3 class="font-weight-bold">Informações Gerais</h3>
+            <h3 class="font-weight-bold" id="nomelugar">Informações Gerais</h3>
             <div class="underline-pink line-small"></div>
             <div class="container d-inline-flex p-3">
               <span style="color:goldenrod;"><i class="fas fa-star"></i></span>
               <p>4,8(10)</p>
-              <p class="font-weight-bold">São Paulo, Brasil</p>
+              <p class="font-weight-bold" id="adpequeno"><b id="city3">São Paulo</b>Brasil</p>
             </div>
           </div>
           <div class="row">
@@ -202,15 +202,15 @@
         <div class="card rounded p-3 shadow-sm">
           <div class="d-flex">
             <img class="icon-md mr-3" src="img/gastronomia/endereco.png" alt="ícone de localização laranja">
-            <p class="m-0">R. Joaquim Antunes, 210 - Jardim Paulistano, São Paulo - SP, 05415-010</p>
+            <p class="m-0" id="adgrande">R. Joaquim Antunes, 210 - Jardim Paulistano, São Paulo - SP, 05415-010</p>
           </div>
           <div class="d-flex my-2">
             <img class="icon-md mr-3" src="img/gastronomia/telefone.png" alt="ícone de localização laranja">
-            <p class="my-auto">(11) 97473-8994</p>
+            <p class="my-auto" id="phone">Sem Telefone</p>
           </div>
           <div class="d-flex my-2">
             <img class="icon-md mr-3" src="img/gastronomia/site.png" alt="ícone de localização laranja">
-            <p class="my-auto">manimanioca.com.br</p>
+            <p class="my-auto" id="url">Sem Site</p>
           </div>
           <div class="d-flex my-2">
             <img class="icon-md mr-3" src="img/gastronomia/funcionamento.png" alt="ícone de localização laranja">
@@ -818,6 +818,20 @@ defer
 ></script>
 <script src="script/apiTemperatura.js"></script>
 <script src="./script/changeLoginButton.js"></script>
+
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<script src="script/apiHotel.js"></script>
+
 </body>
 
 

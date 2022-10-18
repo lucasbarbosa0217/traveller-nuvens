@@ -207,6 +207,18 @@
 
 
 
+    <div class="container p-4 locaisproximos mt-5">
+      <div class="locais-title mt-2 ">
+        <h3 class="font-weight-bold" id="hoteisDestaque">Museus Próximos</h4>
+          <div class="divisor orangeClr">
+          </div>
+      </div>
+    </div>
+    <div class="d-flex flex-row flex-nowrap overflow-auto line-items container">
+      <ul title="Lista de museus próximos" class="d-flex flex-row" id="destaque">
+  </ul>
+  </div>
+
     <section class="places mt-5 pb-5">
 
       <div class="container p-4 locaisproximos">
@@ -673,7 +685,25 @@
   type="javascript" defer></script>
 <script src="script/apiTemperatura.js"></script>
 <script src="./script/changeLoginButton.js"></script>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<script type="text/javascript">
+  var category = "museum"
+var path = "img/historia/MASP.png"
+var color = "orangeClr";
+var page = "./exemploCulturaTeatro"
 
 
+</script>
+<script src="script/apiTomTom.js"></script>
 
 </html>
