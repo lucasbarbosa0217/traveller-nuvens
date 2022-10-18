@@ -6,7 +6,7 @@ Traveller é um projeto acadêmico realizado pelos primeiro ano de Sistemas para
 
 ### API TRAVELLER
 
-Criamos uma API própia para o nosso projeto usando as tecnologias Node, Express e Postgresql. A hospedagem do banco de dados foi feita na Heroku. O Github do projeto pode ser encontrado [aqui](https://github.com/fabriciosw/Traveller)
+Criamos uma API própia para o nosso projeto usando as tecnologias Node, Express e Postgresql. A hospedagem do banco de dados foi feita na Heroku. O Github do projeto pode ser encontrado [aqui](https://github.com/fabriciosw/Traveller-api)
 
 Nesta api temos o controle de usuários e avaliações. A documentação swagger da api pode ser entrada [aqui](https://traveller-node-api.herokuapp.com/docs)
 
