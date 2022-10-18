@@ -2,7 +2,7 @@ const lista = document.getElementById("listaTemp");
 var htmlDaLista = "";
 var diasTimeStamp;
 fetch(
-  "https://api.openweathermap.org/data/2.5/onecall?lat=-23.5489&lon=-46.638823&units=metric&exclude=minutely,alerts&appid=379e7ec83aaae6a6f8be00600bc16419"
+  "https://api.openweathermap.org/data/2.5/onecall?lat=-23.5489&lon=-46.638823&units=metric&exclude=minutely,alerts&appid=acec806660b6d13efc62f34146df66a9"
 )
   .then((data) => data.json())
   .then((data) => {
