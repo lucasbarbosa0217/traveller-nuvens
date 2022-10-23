@@ -16,6 +16,19 @@
   <script src="./script/rating.service.js"></script>
   <script src="./script/getRates.service.js"></script>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGKPXKVGKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RGKPXKVGKR');
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
@@ -37,113 +50,114 @@
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
   </script>
 
-<!-- Início da header -->
-	<header class="container">
-		<nav class="navbar navbar-expand-lg navbar-light nav-custom d-flex justify-content-between">
-			<div class="logo">
-				<a class="navbar-brand" href="index.html"> <img class="navbar-logo " src="./img/logo.png"
-						alt="Logo do Projeto Traveller - os ponteiros de uma bússola preenchidos pela ilustração da superfície da terra">
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-			</div>
+  <!-- Início da header -->
+  <header class="container">
+    <nav class="navbar navbar-expand-lg navbar-light nav-custom d-flex justify-content-between">
+      <div class="logo">
+        <a class="navbar-brand" href="index.html"> <img class="navbar-logo " src="./img/logo.png"
+            alt="Logo do Projeto Traveller - os ponteiros de uma bússola preenchidos pela ilustração da superfície da terra">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
 
 
-			<div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav">
 
 
-				<ul class="navbar-nav w-100 justify-content-end">
-					<li class="nav-item active"><a class="nav-link" href="#"
-							style="color: #000000; font-weight: 800">Home <span class="sr-only">(current)</span></a>
-					</li>
+        <ul class="navbar-nav w-100 justify-content-end">
+          <li class="nav-item active"><a class="nav-link" href="#" style="color: #000000; font-weight: 800">Home <span
+                class="sr-only">(current)</span></a>
+          </li>
 
-					<li class="nav-item"><a class="nav-link" href="./cadastro.html"
-							style="color: #000000; font-weight: 800">Cadastre-se</a></li>
-					<li class="nav-item"><a href="./login.html"><button class="nav-link btn px-4 pinkClr text-light fw-bold login"
-					id="loginClick">Login</a></button>
-					</li>
-				</ul>
+          <li class="nav-item"><a class="nav-link" href="./cadastro.html"
+              style="color: #000000; font-weight: 800">Cadastre-se</a></li>
+          <li class="nav-item"><a href="./login.html"><button class="nav-link btn px-4 pinkClr text-light fw-bold login"
+                id="loginClick">Login</a></button>
+          </li>
+        </ul>
 
-				<!-- SEARCHBAR -->
-				<form id="form_search" name="form_search" class="form-inline w-100">
-					<div class="form-group w-100">
-						<div class="input-group w-100">
-							<input class="form-control" placeholder="Pesquise um destino..." type="text">
-							<span class="input-group-btn">
-								<button class="btn btn-default pinkClr text-light fw-bold" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-							</span>
-						</div>
-					</div>
-				</form>
-				<!-- FIM DA SEARCHBAR -->
+        <!-- SEARCHBAR -->
+        <form id="form_search" name="form_search" class="form-inline w-100">
+          <div class="form-group w-100">
+            <div class="input-group w-100">
+              <input class="form-control" placeholder="Pesquise um destino..." type="text">
+              <span class="input-group-btn">
+                <button class="btn btn-default pinkClr text-light fw-bold" type="button"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+              </span>
+            </div>
+          </div>
+        </form>
+        <!-- FIM DA SEARCHBAR -->
 
-			</div>
-		</nav>
-	</header>
-	<!-- Fim da header -->
+      </div>
+    </nav>
+  </header>
+  <!-- Fim da header -->
 
-	<!-- Navegação secundária -->
+  <!-- Navegação secundária -->
 
-	<div class="container">
-		<nav class="second-nav">
-			<ul class="list-unstyled d-flex justify-content-between my-5">
-				<li> <a href='dicas-uteis.html' class='navOption'> <span
-							class="underline-green flexItemNav">Dicas Úteis</span></a>
-				</li>
-				<li><a href='hospedagem.html' class='navOption'> <span
-							class="underline-blue flexItemNav ">Hospedagem</span></a></li>
-				<li><a href='gastronomia.html' class='navOption'> <span
-							class="underline-pink flexItemNav ">Gastronomia</span></a></li>
-				<li><a href='historia.html' class='navOption'> <span class="underline-orange flexItemNav">História e
-							Cultura</span></a></li>
-				<li><a href='entretenimento.html' class='navOption'> <span
-							class="underline-purple flexItemNav purpleClr p-2 rounded text-white ">Entretenimento</span></a></li>
-			</ul>
-		</nav>
-	</div>
+  <div class="container">
+    <nav class="second-nav">
+      <ul class="list-unstyled d-flex justify-content-between my-5">
+        <li> <a href='dicas-uteis.html' class='navOption'> <span class="underline-green flexItemNav">Dicas
+              Úteis</span></a>
+        </li>
+        <li><a href='hospedagem.html' class='navOption'> <span class="underline-blue flexItemNav ">Hospedagem</span></a>
+        </li>
+        <li><a href='gastronomia.html' class='navOption'> <span
+              class="underline-pink flexItemNav ">Gastronomia</span></a></li>
+        <li><a href='historia.html' class='navOption'> <span class="underline-orange flexItemNav">História e
+              Cultura</span></a></li>
+        <li><a href='entretenimento.html' class='navOption'> <span
+              class="underline-purple flexItemNav purpleClr p-2 rounded text-white ">Entretenimento</span></a></li>
+      </ul>
+    </nav>
+  </div>
 
-	<!-- Fim da navegação secundária -->
+  <!-- Fim da navegação secundária -->
 
 
-	<!-- Navegação secundária mobile-->
+  <!-- Navegação secundária mobile-->
 
-	<nav class="row SegundaNav-mobile bg-light fixed-bottom text-center text-small">
-		<div class="col navOptionMobile">
-			<a href='dicas-uteis.html' class='navOption'>
-				<img class="navMobileIcon img-fluid" src="./img/nav/dicas-uteis-icon.png" alt="Ícone de dicas úteis">
-				<p class="text-small">Dicas Úteis</p>
-			</a>
-		</div>
-		<div class="col navOptionMobile underline-blue">
-			<a href='hospedagem.html' class='navOption'>
-				<img class="navMobileIcon img-fluid" src="./img/nav/hospedagem-icon.png" alt="Ícone de hospedagem">
-				<p class="text-small">Hospedagem</p>
-			</a>
-		</div>
-		<div class="col navOptionMobile">
-			<a href='gastronomia.html' class='navOption'>
-				<img class="navMobileIcon img-fluid" src="./img/nav/gastronomia-icon.png" alt="Ícone de hospedagem">
-				<p class="text-small">Gastronomia</p>
-			</a>
-		</div>
-		<div class="col navOptionMobile">
-			<a href='historia.html' class='navOption'>
-				<img class="navMobileIcon img-fluid" src="./img/nav/cultura-icon.png" alt="Ícone de hospedagem">
-				<p class="text-small">Cultura</p>
-			</a>
-		</div>
-		<div class="col navOptionMobile">
-			<a href='entretenimento.html' class='navOption'>
-				<img class="navMobileIcon img-fluid" src="./img/nav/entretenimento-icon.png" alt="Ícone de hospedagem">
-				<p class="text-small">Entretenimento</p>
-			</a>
-		</div>
-	</nav>
+  <nav class="row SegundaNav-mobile bg-light fixed-bottom text-center text-small">
+    <div class="col navOptionMobile">
+      <a href='dicas-uteis.html' class='navOption'>
+        <img class="navMobileIcon img-fluid" src="./img/nav/dicas-uteis-icon.png" alt="Ícone de dicas úteis">
+        <p class="text-small">Dicas Úteis</p>
+      </a>
+    </div>
+    <div class="col navOptionMobile underline-blue">
+      <a href='hospedagem.html' class='navOption'>
+        <img class="navMobileIcon img-fluid" src="./img/nav/hospedagem-icon.png" alt="Ícone de hospedagem">
+        <p class="text-small">Hospedagem</p>
+      </a>
+    </div>
+    <div class="col navOptionMobile">
+      <a href='gastronomia.html' class='navOption'>
+        <img class="navMobileIcon img-fluid" src="./img/nav/gastronomia-icon.png" alt="Ícone de hospedagem">
+        <p class="text-small">Gastronomia</p>
+      </a>
+    </div>
+    <div class="col navOptionMobile">
+      <a href='historia.html' class='navOption'>
+        <img class="navMobileIcon img-fluid" src="./img/nav/cultura-icon.png" alt="Ícone de hospedagem">
+        <p class="text-small">Cultura</p>
+      </a>
+    </div>
+    <div class="col navOptionMobile">
+      <a href='entretenimento.html' class='navOption'>
+        <img class="navMobileIcon img-fluid" src="./img/nav/entretenimento-icon.png" alt="Ícone de hospedagem">
+        <p class="text-small">Entretenimento</p>
+      </a>
+    </div>
+  </nav>
 
-	<!-- Fim da navegação secundária -->
+  <!-- Fim da navegação secundária -->
 
   <div class="container">
     <nav aria-label="breadcrumb">

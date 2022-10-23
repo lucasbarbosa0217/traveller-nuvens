@@ -11,6 +11,19 @@
   <link rel="stylesheet" href="./styles/scroll.css">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGKPXKVGKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RGKPXKVGKR');
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
@@ -58,8 +71,8 @@
 
           <li class="nav-item"><a class="nav-link" href="./cadastro.html"
               style="color: #000000; font-weight: 800">Cadastre-se</a></li>
-					<li class="nav-item"><a href="./login.html"><button class="nav-link btn px-4 pinkClr text-light fw-bold login"
-							id="loginClick">Login</a></button>
+          <li class="nav-item"><a href="./login.html"><button class="nav-link btn px-4 pinkClr text-light fw-bold login"
+                id="loginClick">Login</a></button>
           </li>
         </ul>
 
@@ -143,63 +156,64 @@
 
   <!-- Fim da navegação secundária -->
 
-    <!-- Lugar -->
-
-    <div class="container">
-      <div class="container bigimage" title="">
-        <img class="rounded" src="img/historia/historia.jpg" alt="Foto de uma janela de hotel mostrando a paísagem de São Paulo." />
-        <h1>História e Cultura em <b id="city">São Paulo</b></h1>
-      </div>
   <!-- Lugar -->
 
   <div class="container">
+    <div class="container bigimage" title="">
+      <img class="rounded" src="img/historia/historia.jpg"
+        alt="Foto de uma janela de hotel mostrando a paísagem de São Paulo." />
+      <h1>História e Cultura em <b id="city">São Paulo</b></h1>
+    </div>
+    <!-- Lugar -->
 
-    <div class="row">
-      <div class="row col-lg-8">
-        <!-- Sobre -->
-        <div class="container mx-2">
-          <div class="container mt-4 mb-3 mx-4">
-            <h3 class="font-weight-bold">Informações Gerais</h3>
-            <div class="underline-orange line-small"></div>
-          </div>
-          <div class="row">
-            <div class="container mx-4">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                At eveniet enim quibusdam, facere corrupti sed harum quam omnis
-                odit hic beatae velit autem reprehenderit rem laborum ipsa
-                sequi excepturi blanditiis eligendi fugiat incidunt impedit?
-                Nisi aperiam iusto nobis culpa. Rem deserunt quisquam
-                architecto corporis obcaecati asperiores pariatur iste,
-                molestiae ad ratione odit! Vitae sit quidem cupiditate nulla,
-                labore quo dolorem assumenda corporis amet nam ducimus
-                consectetur perspiciatis ratione possimus, nesciunt alias
-                reprehenderit accusantium officiis culpa accusamus voluptas
-                placeat et fuga. Error asperiores voluptas adipisci voluptate
-                minus, temporibus quaerat iste ducimus facere numquam sint at
-                velit quod vel. Aperiam, neque impedit.</p>
+    <div class="container">
+
+      <div class="row">
+        <div class="row col-lg-8">
+          <!-- Sobre -->
+          <div class="container mx-2">
+            <div class="container mt-4 mb-3 mx-4">
+              <h3 class="font-weight-bold">Informações Gerais</h3>
+              <div class="underline-orange line-small"></div>
             </div>
+            <div class="row">
+              <div class="container mx-4">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  At eveniet enim quibusdam, facere corrupti sed harum quam omnis
+                  odit hic beatae velit autem reprehenderit rem laborum ipsa
+                  sequi excepturi blanditiis eligendi fugiat incidunt impedit?
+                  Nisi aperiam iusto nobis culpa. Rem deserunt quisquam
+                  architecto corporis obcaecati asperiores pariatur iste,
+                  molestiae ad ratione odit! Vitae sit quidem cupiditate nulla,
+                  labore quo dolorem assumenda corporis amet nam ducimus
+                  consectetur perspiciatis ratione possimus, nesciunt alias
+                  reprehenderit accusantium officiis culpa accusamus voluptas
+                  placeat et fuga. Error asperiores voluptas adipisci voluptate
+                  minus, temporibus quaerat iste ducimus facere numquam sint at
+                  velit quod vel. Aperiam, neque impedit.</p>
+              </div>
 
+            </div>
           </div>
+          <!-- Fim do sobre -->
         </div>
-        <!-- Fim do sobre -->
+
+        <!-- Menu local -->
+        <div class="col mx-4">
+          <h4 class="font-weight-bold mt-4">História e Cultura</h4>
+          <div class="underline-orange line-small mb-3"></div>
+
+          <a class="menu menuHist btn btn-info border" href="#Museus" role="button">Museus Populares</a>
+          <a class="menu menuHist btn btn-info border" href="#Parques" role="button">Parques</a>
+          <a class="menu menuHist btn btn-info border" href="#CentrosCult" role="button">Centros Culturais</a>
+
+        </div>
+        <!-- Fim Visite o Theatro -->
       </div>
-
-      <!-- Menu local -->
-      <div class="col mx-4">
-        <h4 class="font-weight-bold mt-4">História e Cultura</h4>
-        <div class="underline-orange line-small mb-3"></div>
-
-        <a class="menu menuHist btn btn-info border" href="#Museus" role="button">Museus Populares</a>
-        <a class="menu menuHist btn btn-info border" href="#Parques" role="button">Parques</a>
-        <a class="menu menuHist btn btn-info border" href="#CentrosCult" role="button">Centros Culturais</a>
-
-      </div>
-      <!-- Fim Visite o Theatro -->
     </div>
   </div>
-    </div>
 
-    
+
 
 
   <div class="lucas">
@@ -216,8 +230,8 @@
     </div>
     <div class="d-flex flex-row flex-nowrap overflow-auto line-items container">
       <ul title="Lista de museus próximos" class="d-flex flex-row" id="destaque">
-  </ul>
-  </div>
+      </ul>
+    </div>
 
     <section class="places mt-5 pb-5">
 
@@ -698,11 +712,9 @@
 
 <script type="text/javascript">
   var category = "museum"
-var path = "img/historia/MASP.png"
-var color = "orangeClr";
-var page = "./exemploCulturaTeatro"
-
-
+  var path = "img/historia/MASP.png"
+  var color = "orangeClr";
+  var page = "./exemploCulturaTeatro"
 </script>
 <script src="script/apiTomTom.js"></script>
 

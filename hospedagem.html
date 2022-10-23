@@ -11,6 +11,19 @@
   <link rel="stylesheet" href="./styles/scroll.css">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGKPXKVGKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RGKPXKVGKR');
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
@@ -204,14 +217,15 @@
         <div class="underline-blue line-small mb-3"></div>
 
         <a class="menu menuHosp btn btn-info border" href="#hoteisDestaque" role="button">Hotéis em Destaque</a>
-        <a class="menu menuHosp btn btn-info border" href="#listaTemp" role="button">Temperatura média nos próximos dias</a>
+        <a class="menu menuHosp btn btn-info border" href="#listaTemp" role="button">Temperatura média nos próximos
+          dias</a>
 
       </div>
       <!-- Fim Visite o Theatro -->
     </div>
   </div>
 
-  
+
   <div class="container p-4 locaisproximos mt-5">
     <div class="locais-title mt-2 ">
       <h3 class="font-weight-bold" id="hoteisDestaque">Hotéis Próximos</h4>
@@ -221,8 +235,8 @@
   </div>
   <div class="d-flex flex-row flex-nowrap overflow-auto line-items container">
     <ul title="Lista de hotéis próximos" class="d-flex flex-row" id="destaque">
-</ul>
-</div>
+    </ul>
+  </div>
 
   <div class="container p-4 locaisproximos mt-5">
     <div class="locais-title mt-2 ">
@@ -484,11 +498,9 @@
 <script src="script/apiTemperatura.js"></script>
 <script type="text/javascript">
   var category = "hotel"
-var path = "img/hospedagem/hotelGenerico.png"
-var color = "blueClr";
-var page = "./exemploHotel"
-
-
+  var path = "img/hospedagem/hotelGenerico.png"
+  var color = "blueClr";
+  var page = "./exemploHotel"
 </script>
 <script src="script/apiTomTom.js"></script>
 <script src="./script/changeLoginButton.js"></script>
